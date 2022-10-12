@@ -11,6 +11,7 @@ body {
   display: inline-flex;
   margin: 20px 10px;
   background-color: rgb(241, 241, 241);
+  width: 350px;
 }
 .cart-item .right-block {
   padding: 0 20px;
@@ -25,5 +26,9 @@ body {
 }
 .action-icons:hover {
   cursor: pointer;
+}
+.cart{
+  display: flex;
+  flex-direction: column;
 }
 
