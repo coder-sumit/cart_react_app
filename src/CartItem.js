@@ -1,19 +1,17 @@
 import React from "react";
 
-class CartItem extends React.Component {
+const CartItem= (props)=>{
 
- 
-    render() {
         // console.log("render");
-        const { price, title, qty } = this.props.product;
-        const {decreaseQty, increaseQty, deleteProduct, product} = this.props;
+        const { price, title, qty, img } = props.product;
+        const {decreaseQty, increaseQty, deleteProduct, product} = props;
 
         
         return (
 
             <div className="cart-item">
                 <div className="left-block">
-                    <img src="https://media.istockphoto.com/photos/mobile-phone-top-view-with-white-screen-picture-id1161116588?k=20&m=1161116588&s=612x612&w=0&h=NKv_O5xQecCHZic53onobxjqGfW7I-D-tBrzXaPbj_Q=" style={styles.image}></img>
+                    <img src={img} style={styles.image}></img>
                 </div>
                 <div className="right-block">
                     <div style={{ fontSize: 25 }}>{title}</div>
@@ -40,7 +38,7 @@ class CartItem extends React.Component {
             </div>
         )
 
-    }
+    
 }
 
 const styles = {

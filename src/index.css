@@ -7,6 +7,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: rgb(241, 228, 228);
 }
+.cart{
+  display: flex;
+}
 .cart-item {
   display: inline-flex;
   margin: 20px 10px;
@@ -27,8 +30,5 @@ body {
 .action-icons:hover {
   cursor: pointer;
 }
-.cart{
-  display: flex;
-  flex-direction: column;
-}
+
 
